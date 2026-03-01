@@ -103,9 +103,9 @@ app.use((req,res,next)=>{
 
 
 
-// app.get("/", (req, res) => {
-//     res.send("fff");
-// })
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
 
 //listings routes
 app.use("/listings", listingRouter);
